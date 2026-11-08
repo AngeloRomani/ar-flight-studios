@@ -1,0 +1,140 @@
+media:
+  - name: images
+    label: Website images
+    input: media/images
+    output: /ar-flight-studios/media/images
+    categories: [image]
+    rename: safe
+  - name: downloads
+    label: Mod and livery files
+    input: media/files
+    output: /ar-flight-studios/media/files
+    categories: [compressed, document, code]
+    rename: safe
+
+content:
+  - name: site
+    label: Website & Homepage
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - { name: brand, label: Brand name, type: string }
+      - { name: heroEyebrow, label: Hero small heading, type: string }
+      - { name: heroLine1, label: Hero title line 1, type: string }
+      - { name: heroHighlight, label: Hero highlighted title, type: string }
+      - { name: heroText, label: Hero description, type: text }
+      - { name: heroImage, label: Hero image, type: image, options: { media: images } }
+      - { name: heroPrimaryLabel, label: Hero main button, type: string }
+      - { name: heroPrimaryUrl, label: Hero main button link, type: string }
+      - { name: heroSecondaryLabel, label: Hero secondary button, type: string }
+      - { name: heroSecondaryUrl, label: Hero secondary button link, type: string }
+      - { name: categoriesEyebrow, label: Categories eyebrow, type: string }
+      - { name: categoriesLine1, label: Categories title, type: string }
+      - { name: categoriesHighlight, label: Categories highlighted title, type: string }
+      - { name: categoriesDescription, label: Categories description, type: text }
+      - { name: libraryEyebrow, label: Library eyebrow, type: string }
+      - { name: libraryLine1, label: Library title, type: string }
+      - { name: libraryHighlight, label: Library highlighted title, type: string }
+      - { name: featuredEyebrow, label: Featured section eyebrow, type: string }
+      - { name: featuredLine1, label: Featured title, type: string }
+      - { name: featuredHighlight, label: Featured highlighted title, type: string }
+      - { name: featuredText, label: Featured text, type: text }
+      - { name: featuredImage, label: Featured image, type: image, options: { media: images } }
+      - { name: featuredButtonLabel, label: Featured button text, type: string }
+      - { name: featuredButtonUrl, label: Featured button link, type: string }
+      - { name: newsEyebrow, label: News eyebrow, type: string }
+      - { name: newsLine1, label: News title, type: string }
+      - { name: newsHighlight, label: News highlighted title, type: string }
+      - { name: aboutEyebrow, label: About eyebrow, type: string }
+      - { name: aboutLine1, label: About title, type: string }
+      - { name: aboutHighlight, label: About highlighted title, type: string }
+      - { name: aboutText, label: About text, type: text }
+      - { name: discordEyebrow, label: Discord eyebrow, type: string }
+      - { name: discordLine1, label: Discord title, type: string }
+      - { name: discordHighlight, label: Discord highlighted title, type: string }
+      - { name: discordText, label: Discord description, type: text }
+      - { name: discordUrl, label: Discord invite URL, type: string }
+      - { name: discordButtonLabel, label: Discord button label, type: string }
+      - { name: footerDescription, label: Footer description, type: text }
+      - { name: copyright, label: Copyright text, type: string }
+      - { name: disclaimer, label: Footer disclaimer, type: string }
+
+  - name: projects
+    label: Products, Mods & Liveries
+    type: file
+    path: content/projects.json
+    format: json
+    list: true
+    fields:
+      - { name: id, label: Unique ID, type: string, required: true }
+      - { name: title, label: Product title, type: string, required: true }
+      - name: category
+        label: Category
+        type: select
+        options:
+          values: [Aircraft, Liveries, Scenery, Utilities]
+      - { name: tag, label: Product badge, type: string }
+      - { name: description, label: Description, type: text }
+      - { name: version, label: Version, type: string }
+      - { name: updated, label: Last updated, type: string }
+      - { name: fileSize, label: File size, type: string }
+      - { name: image, label: Product cover image, type: image, options: { media: images } }
+      - { name: downloadUrl, label: External download URL, type: string }
+      - { name: downloadFile, label: Uploaded download file, type: file, options: { media: downloads } }
+      - { name: installation, label: Installation instructions, type: text }
+      - { name: featured, label: Featured product, type: boolean }
+      - { name: published, label: Published on website, type: boolean }
+
+  - name: categories
+    label: Category tiles
+    type: file
+    path: content/categories.json
+    format: json
+    list: true
+    fields:
+      - { name: name, label: Filter key, type: string, required: true }
+      - { name: label, label: Category label, type: string }
+      - { name: number, label: Small category caption, type: string }
+      - { name: title, label: Category title, type: string }
+      - { name: image, label: Category background image, type: image, options: { media: images } }
+      - { name: enabled, label: Show category, type: boolean }
+
+  - name: news
+    label: News & Updates
+    type: file
+    path: content/news.json
+    format: json
+    list: true
+    fields:
+      - { name: id, label: Unique ID, type: string }
+      - { name: label, label: News badge, type: string }
+      - { name: title, label: News title, type: string, required: true }
+      - { name: text, label: News text, type: text }
+      - { name: date, label: Date or label, type: string }
+
+  - name: navigation
+    label: Navigation links
+    type: file
+    path: content/navigation.json
+    format: json
+    list: true
+    fields:
+      - { name: label, label: Link text, type: string, required: true }
+      - { name: url, label: Link URL, type: string, required: true }
+      - { name: enabled, label: Show link, type: boolean }
+
+  - name: pages
+    label: Custom Pages
+    type: file
+    path: content/pages.json
+    format: json
+    list: true
+    fields:
+      - { name: slug, label: Page URL slug, type: string, required: true }
+      - { name: title, label: Page title, type: string, required: true }
+      - { name: navLabel, label: Navigation label, type: string }
+      - { name: showInNav, label: Show in navigation, type: boolean }
+      - { name: intro, label: Page introduction, type: text }
+      - { name: body, label: Page content, type: text }
+      - { name: image, label: Page image, type: image, options: { media: images } }
