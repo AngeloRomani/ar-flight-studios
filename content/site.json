@@ -4,7 +4,6 @@
   "heroLine1": "MAKE EVERY",
   "heroHighlight": "FLIGHT MATTER.",
   "heroText": "Discover carefully curated community creations for Aerofly Flight Simulator. Aircraft enhancements, custom liveries, detailed scenery and more.",
-  "heroImage": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=2200&q=88",
   "heroPrimaryLabel": "EXPLORE THE LIBRARY",
   "heroPrimaryUrl": "#library",
   "heroSecondaryLabel": "DISCOVER AR STUDIOS",
@@ -20,7 +19,7 @@
   "featuredLine1": "YOUR IDEAS.",
   "featuredHighlight": "OUR HANGAR.",
   "featuredText": "Have a project in mind, spotted something that needs improving, or created an add-on of your own? We want to hear from you.",
-  "featuredImage": "https://images.unsplash.com/photo-1506947411487-a56738267384?auto=format&fit=crop&w=1300&q=85",
+  "featuredImage": "/ar-flight-studios/media/images/photo-1506947411487-a56738267384.jpeg",
   "featuredButtonLabel": "GET INVOLVED",
   "featuredButtonUrl": "https://discord.com/",
   "newsEyebrow": "FROM THE HANGAR",
@@ -37,6 +36,6 @@
   "discordUrl": "https://discord.com/",
   "discordButtonLabel": "JOIN OUR DISCORD",
   "footerDescription": "Enhancing your Aerofly experience, one community project at a time.",
-  "copyright": "© 2026 AR FLIGHT STUDIOS. ALL RIGHTS RESERVED.",
+  "copyright": "© 2026 AR FLIGHT STUDIOS. ALL RIGHTS RESERVED TO ANGELO ROMANI.",
   "disclaimer": "INDEPENDENT COMMUNITY PROJECT · NOT AFFILIATED WITH IPACS."
 }
