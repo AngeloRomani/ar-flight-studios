@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080c12">
+  <meta name="description" content="AR Flight Studios — premium community add-ons, aircraft mods, liveries and scenery for Aerofly Flight Simulator.">
+  <title>AR Flight Studios | Aerofly Add-ons</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="top-strip"><span class="pulse"></span> INDEPENDENT AEROFLY FS COMMUNITY PROJECT <i></i> FREE COMMUNITY DOWNLOADS</div>
+  <header class="header">
+    <button class="hamburger" id="openMenu" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <a class="logo" href="#"><span class="logo-symbol">AR<span>✳</span></span><span class="logo-type">AR FLIGHT <b>STUDIOS</b><small>ADD-ONS FOR AEROFLY FS</small></span></a>
+    <nav class="main-nav"><a href="#library">Downloads</a><a href="#categories">Categories</a><a href="#latest">Latest news</a><a href="#about">About</a></nav>
+    <a class="header-cta" href="#community">JOIN THE COMMUNITY <span>↗</span></a>
+  </header>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-top"><a class="logo" href="#"><span class="logo-symbol">AR<span>✳</span></span><span class="logo-type">AR FLIGHT <b>STUDIOS</b><small>ADD-ONS FOR AEROFLY FS</small></span></a><button id="closeMenu" aria-label="Close menu">×</button></div>
+    <p class="nav-caption">MAIN MENU</p><a class="drawer-link" href="#">Home <span>↗</span></a><a class="drawer-link" href="#library">Download library <span>↗</span></a><a class="drawer-link" href="#categories">Browse categories <span>↗</span></a><a class="drawer-link" href="#latest">Latest news <span>↗</span></a><a class="drawer-link" href="#about">About AR Studios <span>↗</span></a>
+    <p class="nav-caption">DOWNLOAD CATEGORIES</p><a class="drawer-link" href="#library" data-filter-link="Aircraft">Aircraft mods</a><a class="drawer-link" href="#library" data-filter-link="Liveries">Liveries</a><a class="drawer-link" href="#library" data-filter-link="Scenery">Scenery & airports</a><a class="drawer-link" href="#library" data-filter-link="Utilities">Utilities & add-ons</a>
+    <div class="drawer-bottom"><span class="mini-label">FOLLOW THE PROJECT</span><a href="https://discord.com/" target="_blank" rel="noopener">Discord community ↗</a><a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a></div>
+  </aside>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg"></div><div class="hero-gradient"></div>
+      <div class="hero-inner">
+        <div class="overline"><span></span> YOUR FLIGHT. YOUR EXPERIENCE.</div>
+        <h1>MAKE EVERY<br>FLIGHT <em>MATTER.</em></h1>
+        <p>Discover carefully curated community creations for Aerofly Flight Simulator. Aircraft enhancements, custom liveries, detailed scenery and more.</p>
+        <div class="hero-buttons"><a class="button gold" href="#library">EXPLORE THE LIBRARY <b>↘</b></a><a class="button-quiet" href="#about">DISCOVER AR STUDIOS <b>→</b></a></div>
+      </div>
+      <div class="hero-bottom"><span>01 / COMMUNITY-DRIVEN CONTENT</span><span>MADE FOR AEROFLY FLIGHT SIMULATOR</span></div>
+      <div class="hero-index">AR<span>—</span>01</div>
+    </section>
+
+    <div class="marquee"><span>EXPLORE · DOWNLOAD · FLY</span><b>✳</b><span>COMMUNITY ADD-ONS FOR AEROFLY FS</span><b>✳</b><span>BUILT FOR FLIGHT SIMULATION ENTHUSIASTS</span><b>✳</b></div>
+
+    <section class="section categories-section" id="categories">
+      <div class="section-head"><div><label>EXPLORE THE COLLECTION</label><h2>FIND YOUR NEXT<br><em>UPGRADE.</em></h2></div><p>From aircraft modifications to immersive destinations, explore content created to make your simulator feel like your own.</p></div>
+      <div class="category-grid">
+        <button class="category-card aircraft" data-category="Aircraft"><span>01 / AIRCRAFT</span><strong>AIRCRAFT<br>MODS</strong><b>↗</b></button>
+        <button class="category-card liveries" data-category="Liveries"><span>02 / PAINT & IDENTITY</span><strong>CUSTOM<br>LIVERIES</strong><b>↗</b></button>
+        <button class="category-card scenery" data-category="Scenery"><span>03 / DESTINATIONS</span><strong>SCENERY &<br>AIRPORTS</strong><b>↗</b></button>
+        <button class="category-card utilities" data-category="Utilities"><span>04 / ENHANCEMENTS</span><strong>TOOLS &<br>ADD-ONS</strong><b>↗</b></button>
+      </div>
+    </section>
+
+    <section class="section library-section" id="library">
+      <div class="section-head library-head"><div><label>THE AR FLIGHT STUDIOS LIBRARY</label><h2>DOWNLOAD <em>CENTRE.</em></h2></div><div class="total"><strong id="itemCount">04</strong><span>AVAILABLE<br>PROJECTS</span></div></div>
+      <div class="toolbar"><div class="filters" id="filters"><button class="filter selected" data-filter="All">ALL CONTENT</button><button class="filter" data-filter="Aircraft">AIRCRAFT</button><button class="filter" data-filter="Liveries">LIVERIES</button><button class="filter" data-filter="Scenery">SCENERY</button><button class="filter" data-filter="Utilities">UTILITIES</button></div><label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search the library..." aria-label="Search library"></label></div>
+      <div class="cards" id="cards"></div><div class="no-results" id="noResults" hidden>No projects found. Try a different search or category.</div>
+      <div class="library-bottom"><span>SHOWCASING COMMUNITY PROJECTS FOR AEROFLY FS</span><a href="https://discord.com/" target="_blank" rel="noopener">SUGGEST A PROJECT ON DISCORD ↗</a></div>
+    </section>
+
+    <section class="featured-band">
+      <div class="featured-image"></div><div class="featured-copy"><label>THE COMMUNITY MAKES IT BETTER</label><h2>YOUR IDEAS.<br>OUR <em>HANGAR.</em></h2><p>Have a project in mind, spotted something that needs improving, or created an add-on of your own? We want to hear from you.</p><a class="button gold" href="https://discord.com/" target="_blank" rel="noopener">GET INVOLVED <b>↗</b></a></div>
+    </section>
+
+    <section class="section news-section" id="latest"><div class="section-head"><div><label>FROM THE HANGAR</label><h2>LATEST <em>UPDATES.</em></h2></div><span class="subtle">PROJECT NEWS & RELEASE NOTES</span></div>
+      <div class="news-grid">
+        <article class="news-card"><div class="news-number">01</div><div><label>WELCOME</label><h3>Welcome to AR Flight Studios</h3><p>A new home for community-made Aerofly Flight Simulator content. More projects and updates coming soon.</p></div><span class="news-date">2026</span></article>
+        <article class="news-card"><div class="news-number">02</div><div><label>COMING SOON</label><h3>New projects are taking shape</h3><p>Check back for new aircraft enhancements, liveries, scenery and useful simulator add-ons.</p></div><span class="news-date">SOON</span></article>
+      </div>
+    </section>
+
+    <section class="about-band" id="about"><div class="about-mark">AR<span>✳</span></div><div><label>INDEPENDENT. COMMUNITY-FOCUSED.</label><h2>WELCOME TO<br><em>AR FLIGHT STUDIOS.</em></h2><p>AR Flight Studios is an independent community project focused on sharing creative add-ons and enhancements for Aerofly Flight Simulator. Our goal is simple: bring creators and flight simulation enthusiasts together.</p></div></section>
+    <section class="discord-cta" id="community"><div><label>STAY IN THE LOOP</label><h2>THE HANGAR IS BETTER<br><em>TOGETHER.</em></h2><p>Join our Discord community for release announcements, support, feedback and conversations with fellow sim pilots.</p></div><a class="discord-button" href="https://discord.com/" target="_blank" rel="noopener"><span class="discord-glyph">◉</span><span><b>JOIN OUR DISCORD</b><small>CONNECT WITH THE COMMUNITY</small></span><strong>↗</strong></a></section>
+  </main>
+
+  <footer class="footer"><div class="footer-main"><a class="logo" href="#"><span class="logo-symbol">AR<span>✳</span></span><span class="logo-type">AR FLIGHT <b>STUDIOS</b><small>ADD-ONS FOR AEROFLY FS</small></span></a><p>Enhancing your Aerofly experience, one community project at a time.</p><div class="footer-links"><a href="#library">Downloads</a><a href="#about">About</a><a href="#community">Discord</a><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></div></div><div class="footer-bottom"><span>© 2026 AR FLIGHT STUDIOS. ALL RIGHTS RESERVED.</span><span>INDEPENDENT COMMUNITY PROJECT · NOT AFFILIATED WITH IPACS.</span><a href="#">BACK TO TOP ↑</a></div></footer>
+
+  <dialog class="detail-dialog" id="detailDialog"><button class="dialog-close" id="dialogClose" aria-label="Close details">×</button><div id="dialogContent"></div></dialog>
+  <script src="script.js"></script>
+</body>
+</html>
