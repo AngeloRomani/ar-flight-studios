@@ -1,0 +1,16 @@
+[
+  {
+    "id": "welcome",
+    "label": "WELCOME",
+    "title": "Welcome to AR Flight Studios",
+    "text": "A new home for community-made Aerofly Flight Simulator content. More projects and updates coming soon.",
+    "date": "2026"
+  },
+  {
+    "id": "coming-soon",
+    "label": "COMING SOON",
+    "title": "New projects are taking shape",
+    "text": "Check back for new aircraft enhancements, liveries, scenery and useful simulator add-ons.",
+    "date": "SOON"
+  }
+]

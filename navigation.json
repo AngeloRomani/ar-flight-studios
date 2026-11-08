@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Downloads",
+    "url": "#library",
+    "enabled": true
+  },
+  {
+    "label": "Categories",
+    "url": "#categories",
+    "enabled": true
+  },
+  {
+    "label": "Latest news",
+    "url": "#latest",
+    "enabled": true
+  },
+  {
+    "label": "About",
+    "url": "#about",
+    "enabled": true
+  }
+]
